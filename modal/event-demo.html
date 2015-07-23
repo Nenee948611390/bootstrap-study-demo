@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>模态状况</title>
+        <link href="../lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+    </head>
+    <body>
+        <button type="button" class="btn btn-primary btn-lg" onclick="openModal();">
+            Launch demo modal
+        </button>
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                    </div>
+                    <div class="modal-body">
+                        ...
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="../lib/jquery/dist/jquery.js"></script>
+        <script src="../lib/bootstrap/dist/js/bootstrap.js"></script>
+        <script type="text/javascript">
+            function openModal() {
+                console.log("before open action");
+                $('#myModal').modal({
+                    backdrop: true,
+                    keyboard: false,
+                    show: true,
+                    remote: "template.html"
+                });
+                console.log("after open action");
+            }
+            $('#myModal').on('show.bs.modal', function (e) {
+                console.log("show");
+            });
+            $('#myModal').on('shown.bs.modal', function (e) {
+                console.log("shown");
+            });
+            $('#myModal').on('hide.bs.modal', function (e) {
+
+            });
+            $('#myModal').on('hidden.bs.modal', function (e) {
+                console.log("hiddden");
+            });
+            $('#myModal').on('loaded.bs.modal', function (e) {
+                console.log("loaded");
+            });
+        </script>
+    </body>
+</html>
