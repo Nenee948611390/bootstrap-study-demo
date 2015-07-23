@@ -40,10 +40,10 @@
 通过 data 属性或 JavaScript 调用模态框插件，可以根据需要动态展示隐藏的内容。模态框弹出时还会为 <body> 元素添加 .modal-open 类，从而覆盖页面默认的滚动行为，并且还会自动生成一个 .modal-backdrop 元素用于提供一个可点击的区域，点击此区域就即可关闭模态框。
 
 ### 通过 data 属性
-不需写 JavaScript 代码也可激活模态框。通过在一个起控制器作用的元素（例如：按钮）上添加 data-toggle="modal" 属性和data-target="#foo" 属性，以及 href="#foo" 属性，用于指向被控制的模态框。例如：`<button type="button" data-toggle="modal" data-target="#myModal">Launch modal</button>`，完整示例参考dynamic-demo.html。
+不需写 JavaScript 代码也可激活模态框。通过在一个起控制器作用的元素（例如：按钮）上添加 data-toggle="modal" 属性和data-target="#foo" 属性，以及 href="#foo" 属性，用于指向被控制的模态框。例如：`<button type="button" data-toggle="modal" data-target="#myModal">Launch modal</button>`，完整示例参考[dynamic-demo.html](https://github.com/zhbhun/bootstrap-study-demo/blob/master/modal/dynamic-demo.html).
 
 ### 通过 JavaScript 调用
-需一行 JavaScript 代码，即可通过元素的 id myModal 调用模态框：`$('#myModal').modal(options)`，完整示例参考dynamic-by-javascript-demo.html。modal参数：
+需一行 JavaScript 代码，即可通过元素的 id myModal 调用模态框：`$('#myModal').modal(options)`，完整示例参考[dynamic-by-javascript-demo.html](https://github.com/zhbhun/bootstrap-study-demo/blob/master/modal/dynamic-by-javascript-demo.html)。modal参数：
 - backdrop boolean/'static' 默认值为true，Includes a modal-backdrop element. Alternatively, specify static for a backdrop which doesn't close the modal on click.
 - keyboard boolean 默认值为true，键盘上的 esc 键被按下时关闭模态框。
 - show boolean 默认值为true，模态框初始化之后就立即显示出来。
@@ -70,7 +70,7 @@ $('#myModal').on('hidden.bs.modal', function (e) {
   // do something...
 })
 ```
-完整实例参考event-demo.html
+完整实例参考[event-demo.html](https://github.com/zhbhun/bootstrap-study-demo/blob/master/modal/event-demo.html)
 
 ---
 
@@ -82,8 +82,6 @@ $('#myModal').on('hidden.bs.modal', function (e) {
 - 动画
     - div.modal.fade
     - div.modal
-- 
-
 
 ---
 
