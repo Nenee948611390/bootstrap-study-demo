@@ -352,3 +352,10 @@ $('#myModal').on('shown.bs.modal', function () {
 
 4. 嵌入视频
 在模态框中嵌入 YouTube 视频需要增加一些额外的 JavaScript 代码，用于自动停止重放等功能，这些代码并没有在 Bootstrap 中提供。请参考这份[发布在 Stack Overflow 上的文章](https://stackoverflow.com/questions/18622508/bootstrap-3-and-youtube-in-modal)。
+
+---
+
+# Todo
+1. bootstrap是如何通过data属性开闭模态框的？
+2. “增强模态框的可访问性 ”是做什么用的？
+3. ...
