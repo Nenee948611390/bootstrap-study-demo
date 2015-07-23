@@ -337,10 +337,10 @@ $('#myModal').on('hidden.bs.modal', function (e) {
 
 # 问题
 1. 模态框不支持同时打开多个模态框
-    千万不要在一个模态框上重叠另一个模态框。要想同时支持多个模态框，需要自己写额外的代码来实现。
+    千万不要在一个模态框上重叠另一个模态框。要想同时支持多个模态框，需要自己写额外的代码来实现。参考实例[wrong-multi-modal-demo.html](https://github.com/zhbhun/bootstrap-study-demo/blob/master/modal/wrong-multi-modal-demo.html)和[multi-modal-demo.html](https://github.com/zhbhun/bootstrap-study-demo/blob/master/modal/multi-modal-demo.html)
 
 2. 模态框的HTML代码放置的位置
-    务必将模态框的 HTML 代码放在文档的最高层级内（也就是说，尽量作为 body 标签的直接子元素），以避免其他组件影响模态框的展现和/或功能。
+    务必将模态框的 HTML 代码放在文档的最高层级内（也就是说，尽量作为 body 标签的直接子元素），以避免其他组件影响模态框的展现和/或功能，参考实例[wrong-multi-modal-demo.html](https://github.com/zhbhun/bootstrap-study-demo/blob/master/modal/wrong-multi-modal-demo.html)。
 
 3. Due to how HTML5 defines its semantics, the autofocus HTML attribute has no effect in Bootstrap modals. To achieve the same effect, use some custom JavaScript:
 
